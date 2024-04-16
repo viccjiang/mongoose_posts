@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "985a7473-d530-4255-be0d-7a3d53eba686",
+		"name": "mongoose-posts-render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19843147",
+		"_collection_link": "https://martian-capsule-262445.postman.co/workspace/My-Workspace~77fd6e3f-fc13-4924-87b5-63e25cb2e01e/collection/19843147-985a7473-d530-4255-be0d-7a3d53eba686?action=share&source=collection_link&creator=19843147"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mongoose-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"mongoose-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"頂尖三人房\",\r\n    \"price\": 1500,\r\n    \"rating\": 4.4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"mongoose-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mongoose-posts.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"mongoose-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mongoose-posts.onrender.com/posts/",
+					"protocol": "https",
+					"host": [
+						"mongoose-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"修改name\",\r\n    \"content\":\"修改內容\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-posts.onrender.com/posts/",
+					"protocol": "https",
+					"host": [
+						"mongoose-posts",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
