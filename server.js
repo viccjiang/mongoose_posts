@@ -62,6 +62,11 @@ const requestListener = async (req, res) => {
           {
             name: data.name,
             content: data.content,
+          },
+          // 助教建議加上這個參數
+          {
+            new: true,
+            runValidators: true
           }
         )
         handleSuccess(res, newPost);
